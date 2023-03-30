@@ -167,10 +167,10 @@ class SettingsViewController: UITableViewController {
 				url = "itms-apps://itunes.apple.com/us/app/textor/id\(appId)?action=write-review"
 			case 1:
 				// GitHub
-				url = "https://github.com/louisdh/textor"
+				url = "https://github.com/extratone/kextor"
 			case 2:
-				// Twitter
-				url = "https://twitter.com/LouisDhauwe"
+				// Mastodon
+				url = "https://mastodon.social/@DavidBlue"
 			case 3:
 				// Contact Us
 				url = nil
@@ -207,7 +207,7 @@ class SettingsViewController: UITableViewController {
 		let mailComposerVC = MFMailComposeViewController()
 		mailComposerVC.mailComposeDelegate = self
 
-		mailComposerVC.setToRecipients(["support@silverfox.be"])
+		mailComposerVC.setToRecipients(["davidblue@extratone.com"])
 
 		let version = Bundle.main.version
 		let build = Bundle.main.build
